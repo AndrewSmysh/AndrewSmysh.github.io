@@ -122,3 +122,13 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
         event.preventDefault();
     }
 });
+
+window.addEventListener("load", function () {
+    var isLoggedIn = localStorage.getItem("isLoggedIn");
+    if (isLoggedIn) {
+        document.querySelector(".asside-login").style.display = "none";
+        document.querySelector(".asside-user").style.display = "flex";
+    } else {
+        document.querySelector(".asside-user").style.display = "none";
+    }
+});
