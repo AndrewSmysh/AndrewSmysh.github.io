@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catalogue</title>
+
+    <script src="https://kit.fontawesome.com/6592f6cf13.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+
+<div class="content">
+    <div class="asside-block">
+        <img src="img/logo.png" alt="logoImg" class="asside-logo">
+        <ul class="asside-ul">
+            <li id="asside-catalog" ><a href="index.html" class="a_catalog" data-translation-key="Catalog">Catalog</a></li>
+            <li id="about_us"><a href="About_us.html" class="a_catalog"  data-translation-key="About us">About us</a></li>
+            <li id="contacts" ><a href="Contacts.html" class="a_catalog" data-translation-key="Contacts">Contacts</a></li>
+        </ul>
+
+        <div class="asside-user">
+            <i class="fa-regular fa-user fa-2xl" style="color: #ffffff;"></i>
+            <div class="user-info">
+                <p class="user-name">name</p>
+                <p class="user-post">manager</p>
+            </div>
+        </div>
+
+        <div class="asside-login">
+            <p class="login-text"><a href="Register.html" class="reg_btn" data-translation-key="log in account"> log in account</a></p>
+        </div>
+    </div>
+
+    <div class="main-block">
+        <div class="header">
+
+            <div class="find_number">
+                <i class="fa-solid fa-phone fa-xl" style="color: #c2c3c7;"></i>
+                <p class="telefone_num">0 684 179 797</p>
+            </div>
+
+            <div class="cart_block">
+                <select id="languageSelector" class="language-selector">
+                    <option value="en">En</option>
+                    <option value="uk">Uk</option>
+                </select>
+
+                <div class="shopping-cart">
+                    <i class="fa-solid fa-cart-shopping fa-xl" style="color: #c2c3c7;"></i>
+                    <a href="Cart.html" class="cart_page">
+                        <p class = "total_cart , cart-item"></p>
+                        <p class="cart-item" data-translation-key="0 items for"> items for</p>
+                        <span class="cart-cost"> $ 0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="log-in" id="loginBlock">
+                <h2 class="lg-welcome" data-translation-key="welcome_back">Welcome back</h2>
+                <div class="form-container">
+                    <form action="" onsubmit="login(event)" class="form-login">
+                        <div class="form-element">
+                            <label for="email" data-translation-key="email_label">Email</label>
+                            <input type="text" id="email" class="form-input" name="email" placeholder="email@post.com">
+                            <p class="error-message" id="email-error-log"></p>
+                        </div>
+                        <div class="form-element">
+                            <label for="password" data-translation-key="password_label">Password</label>
+                            <input type="password" id="password" class="form-input" name="email" placeholder="Enter your password" data-translation-key="password_placeholder">
+                            <p class="error-message" id="password-error-log"></p>
+                        </div>
+                        <div class="sign-block">
+                            <button class="btn-in" onclick="" data-translation-key="sign_in_button"> SIGN IN</button>
+                            <div>
+                                <p class="text-create" data-translation-key="dont_have_account_text">DON’T HAVE AN ACCOUNT?</p>
+                                <a class="create-acc" data-translation-key="create_account_link">create</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="register" id="registerBlock">
+                <h2 class="lg-welcome" data-translation-key="registration_form_heading" >Registration form</h2>
+                <div class="form-container">
+                    <form action="" onsubmit="signup(event)" class="form-register" id="form_register">
+                        <div class="form-element">
+                            <label for="name" data-translation-key="first_name_label">First Name</label>
+                            <input type="text" id="name" class="form-input" name="name" placeholder="Enter your name" data-translation-key="name_placeholder">
+                            <p class="error-message" id="name-error"></p>
+                        </div>
+
+                        <div class="form-element">
+                            <label for="last-name" data-translation-key="last_name_label">Last Name</label>
+                            <input type="text" id="last-name" class="form-input" name="last-name" placeholder="Enter your last name" data-translation-key="name_last">
+                            <p class="error-message" id="last-name-error"></p>
+                        </div>
+
+                        <div class="form-element">
+                            <label for="email-reg">Email</label>
+                            <input type="text" id="email-reg" class="form-input" name="email" placeholder="email@post.com" data-translation-key="email_label">
+                            <p class="error-message" id="email-error"></p>
+                        </div>
+
+                        <div class="form-element">
+                            <label for="password-reg" data-translation-key="password_label">Password</label>
+                            <input type="password" id="password-reg" class="form-input" name="password" placeholder="Enter your password" data-translation-key="password_placeholder">
+                            <p class="error-message" id="password-error"></p>
+                        </div>
+                        <button class="btn-reg" id="btn_register" data-translation-key="register_button"> Register</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"></script>-->
+<script type="module" src="scripts/login-register.js"></script>
+<script src="scripts/cart.js"></script>
+<script src="scripts/translate.js"></script>
+</body>
+</html>

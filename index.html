@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catalogue</title>
+
+    <script src="https://kit.fontawesome.com/6592f6cf13.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+<!--<div class="preloader">
+    <div class="preloader_img">
+
+    </div>
+</div>-->
+<div class="content">
+    <div class="asside-block">
+        <img src="img/logo.png" alt="logoImg" class="asside-logo">
+        <ul class="asside-ul">
+            <li id="asside-catalog" ><a href="index.html" class="a_catalog" data-translation-key="Catalog">Catalog</a></li>
+            <li id="about_us"><a href="About_us.html" class="a_catalog"  data-translation-key="About us">About us</a></li>
+            <li id="contacts" ><a href="Contacts.html" class="a_catalog" data-translation-key="Contacts">Contacts</a></li>
+        </ul>
+
+
+
+        <div class="asside-user">
+            <i class="fa-regular fa-user fa-2xl" style="color: #ffffff;"></i>
+            <div class="user-info">
+                <p class="user-name"></p>
+                <p class="user-post"></p>
+            </div>
+        </div>
+
+        <div class="asside-login">
+            <p class="login-text"><a href="Register.html" class="reg_btn" data-translation-key="log in account"> log in account</a></p>
+        </div>
+    </div>
+
+    <div class="main-block">
+        <div class="header">
+                <div class="find_number">
+                    <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #c2c3c7;"></i>
+                    <input name="sort_by_number" type="text" class="sort_by_number_input" placeholder="" id="search_input" data-translation-key="Search for number">
+                </div>
+
+
+            <div class="cart_block">
+                <select id="languageSelector" class="language-selector">
+                    <option value="en" >En</option>
+                    <option value="uk" >Uk</option>
+                </select>
+
+                <div class="shopping-cart">
+                    <i class="fa-solid fa-cart-shopping fa-xl" style="color: #c2c3c7;"></i>
+                    <a href="Cart.html" class="cart_page">
+                        <p class="cart-item" data-translation-key="0 items for"></p>
+                        <span class="cart-cost" data-translation-key="$ 0"></span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main-content" id="print_table">
+            <div class="main-catalog">
+                <div class="table-container">
+                    <table >
+                        <thead>
+                        <tr>
+                            <th data-translation-key="Manufacturer">Manufacturer</th>
+                            <th data-translation-key="Number">Number</th>
+                            <th data-translation-key="Name">Name</th>
+                            <th><button id="sort_quantity" data-translation-key="Amount">Amount</button></th>
+                            <th id="sort_price" data-translation-key="Price">Price</th>
+                            <th data-translation-key="Delivery/Days">Delivery/Days</th>
+                        </tr>
+                        </thead>
+                        <tbody id="table-body">
+
+                        </tbody>
+                    </table>
+
+                </div>
+                <button id="load-more" class="table_btn_load" data-translation-key="Load More">Load More</button>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"></script>-->
+<script type="module" src="scripts/login-register.js"></script>
+<script type="module" src="scripts/Catalogue.js"></script>
+<script src="scripts/translate.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catalogue</title>
+
+    <script src="https://kit.fontawesome.com/6592f6cf13.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/Cart.css">
+</head>
+<body>
+
+<div class="content">
+    <div class="asside-block">
+        <img src="img/logo.png" alt="logoImg" class="asside-logo">
+        <ul class="asside-ul">
+            <li id="asside-catalog" ><a href="index.html" class="a_catalog" data-translation-key="Catalog">Catalog</a></li>
+            <li id="about_us"><a href="About_us.html" class="a_catalog"  data-translation-key="About us">About us</a></li>
+            <li id="contacts" ><a href="Contacts.html" class="a_catalog" data-translation-key="Contacts">Contacts</a></li>
+        </ul>
+
+        <div class="asside-user">
+            <i class="fa-regular fa-user fa-2xl" style="color: #ffffff;"></i>
+            <div class="user-info">
+                <p class="user-name">name</p>
+            </div>
+        </div>
+
+        <div class="asside-login">
+            <p class="login-text"><a href="Register.html" class="reg_btn" data-translation-key="log in account"> log in account</a></p>
+        </div>
+    </div>
+
+    <div class="main-block">
+        <div class="header">
+
+            <div class="find_number">
+                <i class="fa-solid fa-phone fa-xl" style="color: #c2c3c7;"></i>
+                <p class="telefone_num">0 684 179 797</p>
+            </div>
+
+
+            <div class="cart_block">
+                <select id="languageSelector" class="language-selector">
+                    <option value="en">En</option>
+                    <option value="uk">Uk</option>
+                </select>
+
+                <div class="shopping-cart">
+                    <i class="fa-solid fa-cart-shopping fa-xl" style="color: #c2c3c7;"></i>
+                    <a href="Cart.html" class="cart_page">
+                        <p class = "total_cart , cart-item"></p>
+                        <p class="cart-item" data-translation-key="0 items for"> items for</p>
+                        <span class="cart-cost"> $ 0</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main-content">
+            <h2 class="h2_cart" data-translation-key="checkout_heading">Checkout</h2>
+
+            <div class="summary_blocks">
+                    <div class="form_shipping">
+                        <h4 class="h4_shipping_details" data-translation-key="shipping_details_heading">Shipping details</h4>
+                        <form action="telegram.php" method="POST" class="form_s" id="myForm">
+                            <div class="form-group">
+                                <div class="error_form_group">
+                                    <label for="name" data-translation-key="Name">Name</label>
+                                    <p class="error-message2" id="name-error"></p>
+                                </div>
+                                <input type="text" id="name" name="name" >
+                            </div>
+                            <div class="form-group">
+                                <div class="error_form_group">
+                                    <label for="surname" data-translation-key="surname_label">Surname</label>
+                                    <p class="error-message2" id="last-name-error"></p>
+                                </div>
+                                <input type="text" id="surname" name="surname" >
+
+                            </div>
+                            <div class="form-group">
+                                <div class="error_form_group">
+                                    <label for="number" data-translation-key="number_label">Number</label>
+                                    <p class="error-message2" id="number-error"></p>
+                                </div>
+                                <input type="tel" id="number" name="number" >
+                            </div>
+                            <div class="form-group">
+                                <div class="error_form_group">
+                                    <label for="city" data-translation-key="city_label">City</label>
+                                    <p class="error-message2" id="city-error"></p>
+                                </div>
+                                <input type="text" id="city" name="city" >
+
+                            </div>
+                            <div class="form-group">
+                                <div class="error_form_group">
+                                    <label for="post_num" data-translation-key="post_number_label">Post Number</label>
+                                    <p class="error-message2" id="post-error"></p>
+                                </div>
+                                <input type="number" id="post_num" name="post_num" >
+                            </div>
+                            <input type="hidden" name="selectedI" id="selectedI" value="">
+                            <button type="submit" class="submit-btn" data-translation-key= "buy_button">Buy</button>
+                        </form>
+
+                    </div>
+
+                    <div class="order_summary">
+                                <h4 class="h4_order_summary" data-translation-key= "order_summary_heading">Order Summary</h4>
+                                 <div class="table-container">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th data-translation-key= "Manufacturer">Manufacturer</th>
+                                    <th data-translation-key= "Number">Number</th>
+                                    <th data-translation-key= "Name">Name</th>
+                                    <th data-translation-key= "Price">Price</th>
+                                    <th data-translation-key= "Delivery/Days">Delivery</th>
+                                </tr>
+                                </thead>
+                                <tbody id="table-body"></tbody>
+                            </table>
+                            </div>
+                        <div class="total">
+                            <p class="total_cost" data-translation-key= "total_label" >Total</p>
+                            <p class="cost_calculate" id="calculated_total_cost"></p>
+                        </div>
+
+            </div>
+
+        </div>
+        </div>
+
+    </div>
+</div>
+
+<!--<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"></script>-->
+<script type="module" src="scripts/cart.js"></script>
+<script src="scripts/translate.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
