@@ -594,6 +594,10 @@ th, td {
 }
 
 @media (max-width: 425px) {
+    .content{
+        flex-direction: column;
+    }
+
     .asside-logo {
         width: 179px;
         height: 72px;
