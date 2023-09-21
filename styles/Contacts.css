@@ -1,0 +1,304 @@
+.telefone_num{
+    color: rgba(0, 0, 0, 0.30);
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    padding-left: 20px;
+}
+
+.h4_contact_info{
+    color: #000;
+    font-family: Rubik;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 25px;
+}
+
+.information_blocks {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+
+    width: 99%;
+    height: 100%;
+}
+
+.information_uk,.information_pl{
+    width: 44%;
+
+    height: 500px;
+    border-radius: 20px;
+    background: #F4F5F7;
+}
+
+
+.h5_warehouse_drohobych{
+    color: #000;
+    font-family: Rubik;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+.main_ofice_in_pl{
+    color: #000;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.drohobych_info_email{
+    padding-left: 20px;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.drohobych_info_email span{
+    font-weight: bold;
+}
+
+.hours_block{
+    display: flex;
+    justify-content: space-between;
+}
+.working-hours{
+    padding-right: 20px;
+}
+
+.closed{
+    font-weight: bold;
+}
+.w_hours{
+font-weight: bold;
+}
+
+.mail{
+    display: flex;
+    flex-direction: column;
+}
+
+.telefone_number{
+    padding-left: 86px;
+    padding-top: 20px;
+
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.map_drohobych{
+    padding-top: 50px;
+    height: 60%;
+}
+.map_drohobych iframe{
+    display: flex;
+    margin: auto;
+    width: 85%;
+    height: 100%;
+}
+
+.map_pl{
+    padding-top: 50px;
+    height: 60%;
+}
+.map_pl iframe{
+    display: flex;
+    margin: auto;
+    width: 85%;
+    height: 100%;
+}
+.adress_pl{
+    padding-right: 60px;
+}
+.adress{
+    width: 100px;
+}
+
+@media (max-width: 1026px) {
+    .main-block {
+        width: 100%;
+        height: auto;
+    }
+
+    .h4_contact_info {
+        font-size: 36px;
+    }
+
+    .about_info p {
+        font-size: 17px;
+    }
+
+    .main-content {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .table-container {
+        height: 85%;
+        width: 90%;
+        margin: auto;
+        overflow-y: auto;
+    }
+
+    .table_btn_load {
+        margin-top: 4%;
+    }
+
+    .main-catalog {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .asside-block {
+        width: 33%;
+        height: auto;
+    }
+
+    .h4_contact_info {
+        font-size: 36px;
+    }
+
+    .h5_warehouse_drohobych {
+        font-size: 17px;
+    }
+    .main_ofice_in_pl {
+        font-size: 17px;
+    }
+    .drohobych_info_email {
+        font-size: 14px;
+    }
+    .working-hours p {
+        font-size: 15px;
+    }
+    .telefone_number {
+        padding-left: 15%;
+        font-size: 16px;
+    }
+    .information_blocks {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        width: 99%;
+
+    }
+}
+@media (max-width: 768px) {
+    .asside-logo {
+        width: 179px;
+        height: 72px;
+    }
+    .header {
+
+        height: 70px;
+    }
+    .language-selector {
+        width: 80px;
+        height: 70px;
+    }
+    .fa-xl {
+        font-size: 1em;
+        line-height: .04167em;
+        vertical-align: -0.125em;
+    }
+    .cart-item {
+        font-size: 15px;
+    }
+    .cart-cost {
+        font-size: 15px;
+    }
+    .shopping-cart {
+        width: 100%;
+    }
+    .main-block {
+        width: 100%;
+        height: auto;
+    }
+
+    .h4_contact_info {
+        font-size: 36px;
+    }
+
+    .about_info p {
+        font-size: 17px;
+    }
+
+    .main-content {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .table-container {
+        height: 85%;
+        width: 90%;
+        margin: auto;
+        overflow-y: auto;
+    }
+
+    .table_btn_load {
+        margin-top: 4%;
+    }
+
+    .main-catalog {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .asside-block {
+        width: 33%;
+        height: auto;
+    }
+
+    .h4_contact_info {
+        font-size: 30px;
+    }
+
+    .h5_warehouse_drohobych {
+        font-size: 15px;
+    }
+    .main_ofice_in_pl {
+        font-size: 15px;
+    }
+    .drohobych_info_email {
+        font-size: 12px;
+    }
+    .working-hours p {
+        font-size: 12px;
+    }
+    .telefone_number {
+        padding-left: 15%;
+        font-size: 16px;
+    }
+    .information_blocks {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        width: 99%;
+
+    }
+    .adress {
+        width: 82px;
+    }
+    .adress p {
+        font-size: 12px;
+    }
+}
+
+

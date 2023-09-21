@@ -1,0 +1,193 @@
+.h2_cart{
+    color: #000;
+    font-family: Rubik;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    padding-top: 27px;
+    padding-left: 38px;
+}
+
+.summary_blocks{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form_shipping{
+    width: 54%;
+    height: 510px;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    background: #F4F5F7;
+}
+.order_summary{
+    width: 36%;
+    height: 510px;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    background: #F4F5F7;
+}
+
+.h4_shipping_details{
+    color: #000;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    padding-left: 54px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.form-group input {
+    display: block;
+    margin: 0 auto;
+
+    height: 49px;
+    flex-shrink: 0;
+
+    width: 85%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.30);
+    background: rgba(114, 114, 114, 0.06);
+
+}
+
+.form-group label {
+    padding-left: 53px;
+
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.submit-btn{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    background: #D80027;
+    width: 140px;
+    height: 50px;
+    flex-shrink: 0;
+
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.submit-btn:hover{
+    background: #ff002c;
+}
+
+.h4_order_summary{
+    color: #000;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    padding-left: 54px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.total_cost{
+    padding-left: 54px;
+
+    color: #000;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.total{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.cost_calculate{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.error_form_group{
+    display: flex;
+    justify-content: space-between;
+}
+.error-message2 {
+    color: red;
+  padding-right: 10%;
+}
+
+@media (max-width: 1026px) {
+    .main-block {
+        width: 100%;
+        height: auto;
+    }
+
+    .h4_contact_info {
+        font-size: 36px;
+    }
+
+    .about_info p {
+        font-size: 17px;
+    }
+
+    .main-content {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .table-container {
+        height: 85%;
+        width: 90%;
+        margin: auto;
+        overflow-y: auto;
+    }
+
+    .table_btn_load {
+        margin-top: 4%;
+    }
+
+    .main-catalog {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .asside-block {
+        width: 33%;
+        height: auto;
+    }
+
+
+    
+    .form-group label {
+        padding-left: 9%;
+    }
+}
+
